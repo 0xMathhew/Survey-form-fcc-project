@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Earth Corp Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Earth Corp Survey Form</h1>
+  <p id="description">Thank you for taking the time to improve quality of life on earth</p>
+<form method="post"action="define where the data from the survey have to go" id="survey-form" >
+  <fieldset>
+  <label for="name" id="name-label">Name<input id="name" type="text" placeholder="Your Name" required /></label>
+  <label for="email" id="email-label">Email<input type="email" id="email" placeholder="Email address" required /></label>
+  <label for="number" id="number-label">Age<input type="number" id="number" min="13" max="200" placeholder="Your age" required /></label>
+  <label for="employment" id="employment-label">Current employment<input id="employment" type="text" placeholder="Your current job" required /></label>
+  </fieldset>
+<fieldset>
+  <label>Would you recommend living on earth to a friend from other planet?</label>
+  <label for="definitely"><input type="radio" name="Opinion type" value="definitely" id="definitely" class="inline" />Definitely</label>
+  <label for="maybe"><input type="radio" name="Opinion type" value="maybe" id="maybe" class="inline" />Maybe</label>
+<label for="not sure"><input type="radio" name="Opinion type" value="not sure" id="not sure" class="inline" />Not sure</label>
+<label for="definitely not"><input type="radio" name="Opinion type" value="definitely not" id="definitely not" class="inline" />Definitely not</label>
+</fieldset>
+<fieldset>
+  <label for="dropdown">Your most favourite thing about living on earth?
+    <select id="dropdown">
+      <option value="0">Select one</option>
+      <option value="1">Blue Sky</option>
+      <option value="2">One Sun</option>
+      <option value="3">Water</option>
+      <option value="4">Origin of life</option>
+     <option value="5">Most humans on one planet</option>
+     <option value="6">I don't know</option>
+  </select>
+  </label>
+  <label>What would you like to be improved on earth?</label>
+  <label for="air"><input type="checkbox" value="air quality" id="air" class="inline" /> Quality of air</label>
+  <label for="amount-of-people"><input type="checkbox" value="fewer people" id="amount-of-people" class="inline" /> Fewer people per km^2</label>
+  <label for="water-price"><input type="checkbox" value="water price" id="water-price" class="inline" /> Price of water</label>
+  <label for="organic-food"><input type="checkbox" value="access to organic food" id="organic-food" class="inline" /> Better access to organic food</label>
+   <labe for="user-suggestions">Any comments or suggestions?</label>
+  <textarea id="user-suggestions" name="suggestions" rows="3" cols="30" placeholder="Your question or suggestions about improving quality of life on earth."></textarea>
+  
+  </fieldset>
+
+<input type="submit" value="submit" id="submit" />
+</form>
+</body>
+</html>
